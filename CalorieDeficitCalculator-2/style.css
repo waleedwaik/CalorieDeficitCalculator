@@ -1,0 +1,407 @@
+/*these are the color variables which I used through the page */
+:root{
+	--white:#FFFFFF;
+	--orange:#FF8C00;
+	--color:#202020;
+	--black:#000000;
+	--textColor:rgba(0,0,0, .5);
+}
+
+body{ 
+	font-family: Arial, sans-serif; 
+	background-color: rgba(255,255,255,.5);;
+
+}
+
+/*HEADER SECTION*/
+ .collapse .navbar-nav .nav-item .nav-link{
+	color: var(--white);
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}	
+
+/*on hover turn the link colors to orange*/
+.collapse .navbar-nav .nav-item .nav-link:hover{
+	border-bottom:2px solid var(--orange);
+}	
+
+/*whichever page is active has orange colored nav link*/
+.collapse .navbar-nav .active .nav-link{
+	border-bottom:2px solid var(--orange);
+	/*color: var(--orange);*/
+}	
+
+/*header image*/
+.bg-img{
+		background: url('img/headerBg.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+
+/*SLIDE SECTION*/
+/*this set's the height for the slide to view height so it doesn't appear too long*/
+.carousel-item{
+	height: 100vh;
+	min-height: 300px !important;
+	position: relative;
+}
+
+
+/*on the slider this helps the white layer to be positioned center*/
+.carousel-item::before{
+	content: "";
+    display: block;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	}
+
+	.carousel-caption{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width:70%;
+		max-height: 100vh;
+
+		background-color: rgba(255,255,255,.5);
+		color: rgba(0,0,0, .8);
+		/*border-radius: 100px;*/
+
+	}
+
+	.carousel-caption h2{
+		font-size: 3.1rem; 
+		text-transform: capitalize;
+		margin-bottom: 20px;
+		font-weight: 700;
+		padding-top: 50px;
+
+	}
+
+	.carousel-caption p{
+		font-size: 1.4rem;
+
+	}
+
+.whatIsSection{
+	margin-top:0;
+	margin-bottom: 0;
+	background-color:#F6FBF4;
+
+}
+
+.whatIsDiv{
+	padding: 5em 0;
+}
+
+.whatIsDiv h3{
+	font-size: 2rem;
+	text-transform: capitalize; 
+	color: rgba(0,0,0,.7);
+}
+
+
+.whatIsDiv p{
+	font-size: 1.1rem;
+	text-transform: capitalize;
+	text-align: center; 
+	padding: 20px 0;
+	color: var(--textColor);
+	/*padding-inline: 5em; */
+}
+
+.stepSection{
+	margin: 5em 0;
+}
+
+.step{
+	background-color:#F6FBF4;
+	border-radius: 5px;
+	/*height: 150px;*/
+}
+
+.step div p{
+	margin-inline: 20px; 
+	color: var(--textColor);
+	margin-top: -15px;
+	text-align: justify;
+}
+
+.step img{
+	/*margin-left: -20px*/
+}
+
+/*	FOOTER SECTI0N*/
+.footer{
+ background: var(--color);
+
+}
+
+.footer .footerFlex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
+}
+
+.quickLink ul h5{
+	color: rgba(255,255,255, .8);
+	text-transform: capitalize;
+}
+
+.quickLink ul li{
+	list-style: none;
+	padding-top: 13px;
+}
+
+.quickLink ul li a{
+	text-decoration: none;
+	color: rgba(255,255,255, .5);
+	text-transform: capitalize;
+	border-bottom: 1px solid rgba(255,255,255, .5);
+	padding-bottom: 5px;
+
+}
+
+.quickLink ul li a:hover{
+	color: var(--orange)
+}
+.suggestions form h5, .suggestions h5{
+	color: rgba(255,255,255, .5);
+	text-transform: capitalize;
+}
+/*.suggestions form button{
+  background: var(--orange);
+  color: var(--white);
+}*/
+
+.suggestions ul{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 0;
+	}
+
+	.suggestions ul li{
+		list-style-type: none;
+	}
+
+
+/*ABOUT US SECTION*/
+#about{
+	background: url('img/aboutUs/aboutUspic.png');
+	background-position: center;
+	background-size: cover;
+	background-color: #F6FBF4;
+
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+}
+
+.aboutUsText{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width:70%;
+		max-height: 100vh;
+		background-color: rgba(255,255,255,.2);
+		height: 30vh;
+		color: rgba(0,0,0, .8);
+		/*border-radius: 10px;*/
+		text-align: center;
+
+	}
+
+	.aboutUsText h2{
+		font-size: 3.4rem; 
+		text-transform: capitalize;
+		margin-bottom:10px;
+		font-weight:900;
+		padding-top:40px;
+
+
+	}
+
+	.aboutUsText p{
+		font-size: 1.4rem;
+		color: rgba(0,0,0,.8);
+	}
+
+	.d-flex h2{
+		color: var(--textColor);
+		text-transform: capitalize;
+		font-size: 1.7rem;
+	}
+
+		.label{
+			color: var(--textColor);
+		}
+
+		.c-select{
+			background-color: #fff;
+			border-radius: .25rem;
+			border:1px solid #ced4da;
+			color: #495057;
+			line-height: 1.5;
+		}
+		.threeButtons .input-group-prepend button{
+			border:1px solid #ced4da;
+			background-color: #fff;
+			text-transform: capitalize;
+		}
+
+		.threeButtons .input-group-prepend button:hover{
+				background-color: var(--orange)
+		}
+
+		.threeButtons .input-group-prepend :last-child{
+				border-radius: .25rem;
+		}
+
+		.roundBtn{
+			height: 45px;
+			width: 45px;
+			border-radius: 50%;
+			text-align: center;
+			background-color: rgba(0,0,0,.4);
+			color: #fff;
+			padding-left: 10px;
+		}
+
+	.resultSection h4{
+		color: var(--textColor);
+		text-align: center;
+		text-transform: capitalize;
+
+	}
+	.resultSection ul li{
+		list-style: none;
+		border-bottom: 1px solid #ced4da;
+		padding: 10px 0 5px 0; 
+		color: var(--textColor);
+	}
+
+	.resultSection ul li span{
+		margin-left: 80px;
+		color: var(--color);
+	}
+
+	.colorOrange{
+		background:var(--orange) !important;
+		color: #fff;
+	}
+
+	.calculatorSection{
+		padding: 4em 0;
+	}
+
+	
+@media screen and (max-width: 768px) {
+    /*had to remove the set height as it becomes too long on mobile weight*/
+    .carousel-item{
+	height: unset;
+	}
+	/*I'm hiding the slider text on mobile width to reduce how chocked up it appears and increase aesthetic*/
+	.carousel-caption p{
+		display: none;
+	}
+
+	/*H2 appears to big here so I decided to reduce*/
+	.carousel-caption h2{
+		font-size: 3rem; 
+		margin-bottom: 0px;
+		padding: 5px 0px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-caption h2{
+		font-size: 2rem; 
+		margin-bottom: 0px;
+		padding-top: 0px;
+
+	}
+
+	.carousel-caption p{
+		font-size: 1rem;
+		display: none;
+	}
+	
+	.footer .footerFlex{
+	flex-direction: column;
+	}
+
+	.footer .footerFlex .quickLink{
+		margin-top: 20px;
+	}
+
+
+	#about{
+		height: 50vh;
+	}
+
+	.aboutUsText p{
+		font-size: 1.2rem;
+		color: rgba(0,0,0,.8);
+	}
+
+	.collapse .navbar-nav .nav-item .nav-link:hover{
+	border-bottom:2px solid var(--orange);
+	width: 100px;
+		}
+
+	.collapse .navbar-nav .active .nav-link{
+	border-bottom:2px solid var(--orange);
+	width: 100px;
+		}
+
+		.collapse .navbar-nav .nav-item .nav-link{
+			font-size: 1.2rem;
+		}		
+
+		.collapse .navbar-nav {
+			padding: 30px 0;
+		}		
+
+		.collapse .navbar-nav .nav-link{
+			padding-top: 20px;
+		}	
+
+		.carousel-caption{
+		height: 30vh;
+
+	}
+
+	.carousel-caption h2{
+		padding-top: 20px;
+		font-size: 2.5rem; 
+		
+
+	}
+
+	.whatIsDiv h3{
+	font-size: 1.6rem;
+	
+				}
+
+	.whatIsDiv p{
+	font-size: unset;
+	
+				}
+
+	.suggestions h5{
+		text-align: center;
+	}
+}
